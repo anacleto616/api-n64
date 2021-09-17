@@ -1,4 +1,4 @@
-# 👨‍💻 Maratona Js 2
+# 👨‍💻 API.N64 - Maratona Js 2
 
 Desenvolvido na Maratona Js 2, evento promovido pelo [Emerson Broga](https://emersonbroga.com/) entre os dias 29 de março a 4 de abril de 2021.
 API de uma lista de jogos, armazenada no MongoDB.
