@@ -1,11 +1,11 @@
-const fs = require("fs");
-const dotenv = require("dotenv");
-const { Schema, model, connect } = require("mongoose");
+const fs = require('fs');
+const dotenv = require('dotenv');
+const { Schema, model, connect } = require('mongoose');
 
 dotenv.config();
 
 const GameSchema = new Schema({ title: String }, { strict: false });
-const Game = model("Game", GameSchema);
+const Game = model('Game', GameSchema);
 
 const parseJSON = (data) => {
   try {
@@ -51,7 +51,7 @@ const storeGame = (data) => {
 const importGames = async () => {
   await connectToDB();
 
-  const games = await readGamesFromFile("games.json");
+  const games = await readGamesFromFile('games.json');
 
   for (let i = 0; i < games.length; i++) {
     const game = games[i];
@@ -63,7 +63,3 @@ const importGames = async () => {
 };
 
 importGames();
-
-// Ler o arquivo json - OK
-// Fazer um loop entre cada um dos itens
-// Salvar cada um dos itens do banco

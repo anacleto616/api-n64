@@ -1,4 +1,5 @@
-const { connect } = require("mongoose");
+const { connect } = require('mongoose');
+
 const MONGODB_URL = process.env.DATABASE;
 
 module.exports = () => {
